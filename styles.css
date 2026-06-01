@@ -1,0 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+    background-color: #f0f0f0;
+}
+.navbar ul li {
+    display: inline;
+    background-color: #333;
+    color: blue;
+    border: 1px solid black;
+    margin-right: 10px;
+    padding: 18px;
+    list-style: none;
+}
+
+.navbar a:hover {
+        color: blue;
+        transition: color 0.3s ease;
+        text-decoration: underline;
+    }
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: strong;
+}
+
