@@ -3,71 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nafula's portfolio showcasing web development projects, skills, and contact information.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>My Portfolio</title>
+    <title>Nafula | Web Developer Portfolio</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="logo" href="#home">Nafula</a>
             <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Work">Work</a></li>
-            <li><a href="#Resume">Resume</a></li>
-            <li><a href="#Contact">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section id="Home">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hello, I'm Nafula, I build websites using HTML, CSS, and JavaScript.</p>
-    </section>
-    <section id="About">
-        <h2>About Me</h2>
-        <p>I'm a full-stack developer student with a passion for learning how to create innovative web solutions.</p>
-    </section>
-    <section id="Work">
-        <h2>My Work</h2>
-        <p>Here are some of my recent projects:</p>
-        <ul>
-            <li> 
-                <strong>Restaurant Menu Website</strong>
-                <p>Built a simplewebsite showcasing a restaurant's menu, built with HTML.</p>
-            </li>
-            <li>
-                <strong>Personal Portfolio</strong>
-                <p>Created a personal portfolio website to showcase my projects and skills, built with HTML and CSS.</p>
-        </ul>
-    </section>
-    <section id="Resume">
-        <h2>My Resume</h2>
-       <h3>Skills</h3>
-       <ul>
-           <li>HTML</li>
-           <li>CSS</li>
-           <li>Git & GitHub</li>
-            <li>Responsive Design</li>
-       </ul>
-         <h3>Education</h3>
-        <p>Currently pursuing a Full-Stack Developer course at GOMYCODE.</p>
-    </section>
-    <section id="Contact">
-        <h2>Contact Me</h2>
-        <form action="#" method="post">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
-            <button type="submit" value="Send">Send Message</button>
-        </form>
-    </section>
-    <footer>
-        <p>&copy; 2024 Nafula. All rights reserved.</p>
-        <a href="https://www.youtube.com/watch?v=PuM_WmlHWlU" target="_blank">Dramatic Cats </a> |
-        <a href="#contact">Contact</a> |
 
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">Full-stack developer student</p>
+                <h1>Hi, I'm Nafula. I build thoughtful websites for real people.</h1>
+                <p class="hero-text">I create responsive web pages using HTML, CSS, JavaScript, Git, and GitHub while growing toward full-stack development.</p>
+                <div class="hero-actions">
+                    <a class="button primary" href="#work">View Projects</a>
+                    <a class="button secondary" href="#contact">Contact Me</a>
+                </div>
+            </div>
+            <div class="profile-panel" aria-label="Nafula profile summary">
+                <img src="profile.jpg" alt="Nafula profile picture" class="profile-image">
+                <div>
+                    <span>Currently learning</span>
+                    <strong>Full-stack web development at GOMYCODE</strong>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">About</p>
+                <h2>Curious, practical, and always building.</h2>
+            </div>
+            <p>I'm a full-stack developer student with a passion for creating useful, accessible, and visually polished web experiences. I enjoy turning ideas into pages that are easy to use and simple to maintain.</p>
+        </section>
+
+        <section id="work" class="section work-section">
+            <div class="section-heading">
+                <p class="eyebrow">Work</p>
+                <h2>Recent Projects</h2>
+            </div>
+            <div class="project-grid">
+                <article class="project-card">
+                    <span class="project-tag">HTML</span>
+                    <h3>Restaurant Menu Website</h3>
+                    <p>A simple restaurant menu page that presents dishes clearly and helps visitors browse food options quickly.</p>
+                </article>
+                <article class="project-card">
+                    <span class="project-tag">HTML + CSS</span>
+                    <h3>Personal Portfolio</h3>
+                    <p>A responsive portfolio website built to showcase projects, skills, education, and contact details.</p>
+                </article>
+                <article class="project-card">
+                    <span class="project-tag">Landing Page</span>
+                    <h3>Landing Page Project</h3>
+                    <p>A focused landing page designed to introduce an offer clearly and guide visitors toward a primary action.</p>
+                </article>
+                <article class="project-card">
+                    <span class="project-tag">Travel Website</span>
+                    <h3>Travel Agency Website</h3>
+                    <p>A travel agency website concept that presents destinations, services, and trip information in an inviting layout.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="resume" class="section resume-section">
+            <div class="section-heading">
+                <p class="eyebrow">Resume</p>
+                <h2>Skills and Education</h2>
+            </div>
+            <div class="resume-grid">
+                <div>
+                    <h3>Skills</h3>
+                    <ul class="skill-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Git & GitHub</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Education</h3>
+                    <p>Bachelor's degree in Business Information Technology (BBIT) from KCA University.</p>
+                    <p>Currently pursuing a Full-Stack Developer course at GOMYCODE.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="section-heading">
+                <p class="eyebrow">Contact</p>
+                <h2>Let's build something.</h2>
+            </div>
+            <form action="#" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nafula. All rights reserved.</p>
+        <a href="https://github.com/Nafulah" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="#contact">Contact</a>
     </footer>
 </body>
 </html>
